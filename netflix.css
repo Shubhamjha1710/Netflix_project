@@ -1,0 +1,277 @@
+*
+{
+    padding: 0px;
+    margin:  0px ;
+}
+
+body
+{
+    background-color: rgb(45, 45, 45);
+}
+/* utility class start*/
+.utility_heading
+{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 4px 190px;
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.utility_para
+{
+    color: white;
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 55px;
+    font-weight: bolder;
+}
+
+p
+{
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 25px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+/* ek baar yee utility class ko dekh lio acche se */
+/* utility class end */
+
+/* page -1*/
+.box1
+{
+    position: relative;
+    display: flex;
+    /* border: 2px solid red; */
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.box1::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background :radial-gradient(#1d191978 , #000000cc),url(images/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    z-index: -1;
+}
+
+
+/* navigation bar of the home page */
+.navigation
+{
+    display: flex;
+    height: 50px;
+    margin: 14px;
+    width: 95%;
+    padding-top: 10px;
+}
+.navigation .logo
+{
+    width: 82%;
+    /* border: 2px solid red; */
+}
+
+.navigation img 
+{
+    height: 53px;
+    margin: 2px 10px;
+    /* transition: ; */
+}
+
+.navigation select
+{
+    margin: 1px 10px ;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    background-color :rgba(34, 19, 19, 0.808);
+    color: white;
+    border: 1px solid white;
+    padding: 4px 10px;
+}
+
+.navigation button
+{
+    margin: 1px 10px ;
+    height: 36px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+}
+
+/* middle part of the home page*/
+
+.intro
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 150px 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.user_inputs
+{
+    display: flex;
+    width: 90%;
+    /* border: 2px solid red; */
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 15px;
+}
+
+.user_inputs input
+{
+    height: 58px;
+    width: 55%;
+    background-color:white;
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: 1.1rem;
+    padding: 0px 10px;
+}
+.user_inputs button
+{
+    height: 58px;
+    width: 18%;
+    background-color :red;
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: 1.35rem;
+    color: white;
+}
+
+/* page-1 end */
+
+/* page - 2 begin */
+.box2
+{
+    background-color: black;
+    display: flex;
+    height:300px;
+    /* border: 2px solid red; */
+    padding: 65px 55px;
+    margin-bottom: 8px;
+}
+
+.content h1
+{
+    color: white;
+    font-size: 3rem;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 0px;
+    margin-left:55px ;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: center;
+}
+.box2 img
+{
+    margin-right: 100px;
+}
+
+/* frequently asked questions */
+.question
+{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.faq
+{
+    display: flex;
+    width: 55%;
+    margin: 5px 2.5%;
+    height: 65px;
+    align-items:center;
+    background-color: #303030;
+    justify-content: space-between;
+}
+
+.plus
+{
+    font-size: 45px;
+    color: white;
+    margin: 0px 30px;
+}
+.plus:hover
+{
+    color: red;
+    cursor: pointer;
+}
+.faq h3
+{
+    margin: 10px 32px;
+}
+
+.question h1
+{
+    margin: 55px 10px;
+}
+
+.question p
+{
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 20px;
+    margin-top: 60px;
+    font-weight: bolder;
+}
+.question .user_inputs
+{
+    width: 65%;
+    margin-bottom: 60px;
+}
+
+/* footer */
+.footer
+{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer ul
+{
+    display: flex;
+    width: 60%;
+    margin: 5px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul li
+{
+    margin: 2px 0px;
+    margin-right: 25px ;
+    list-style: none;
+    font-size: .8rem;
+    text-align: left;
+}
+/* media - query */
